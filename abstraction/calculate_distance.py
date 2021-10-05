@@ -23,5 +23,4 @@ if __name__ == '__main__':
 		* math.cos(last_lat_rad)
 		* math.sin(long_diff / 2) ** 2
 	)
-	result = 6371 * (2 * math.atan2(math.sqrt(haversine), math.sqrt(1 - haversine)))
-	print(result)
+	print(6371 * (2 * math.atan2(math.sqrt(haversine), math.sqrt(1 - haversine))))
