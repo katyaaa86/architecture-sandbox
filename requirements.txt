@@ -1,1 +1,3 @@
 twilio==7.1.0
+sheet2dict==0.1.1
+openpyxl==3.0.9

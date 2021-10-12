@@ -34,7 +34,7 @@ You must choose the needed pattern in each case on your own.
 
 
 **Exercises:**
-1. Message sender
+1. #### Message sender
 
 Let’s say you want to build your own marketing software. You begin by writing some 
 code to send messages with `smtplib`.  
@@ -70,3 +70,13 @@ if __name__ == '__main__':
 - Add some code to `message_sender.py` to log all info when send message in console.
 - Add ability to send messages to WhatsApp using [twilio](https://www.twilio.com/blog/send-whatsapp-message-30-seconds-python).  
 !!Do not change user interface
+
+2. #### Files parser
+
+Imagine, that your company works with files and you need to proccess files with different extensions every day.  
+The most popular functions, that you use: parsing files content to dict, to string and adding new information to files.  
+
+- Create `parse_file.py`, where you can process csv and xlsx files, using common interface (choose right pattern)
+- Write methods for every type of file: `parse_rows_to_dict()`, `add_row(new_raw: dict)`, `parse_rows_to_list`.
+- Use `users.csv` and `users.xlsx` to test your code
+- `sheet2dict` and `openpyxl` from requirements will help you in files processing
