@@ -80,3 +80,18 @@ The most popular functions, that you use: parsing files content to dict, to stri
 - Write methods for every type of file: `parse_rows_to_dict()`, `add_row(new_raw: dict)`, `parse_rows_to_list`.
 - Use `users.csv` and `users.xlsx` to test your code
 - `sheet2dict` and `openpyxl` from requirements will help you in files processing
+
+3. #### Event organization
+
+Let's say, that you create service, where people, who wants to organize some event, can find 
+suitable contractors, make deals with them and negotiate the details of a future event.
+
+You create classes for every objects of negotiations: client, presentor, DJ and restaurant.  
+Some of the objects may interact with others. For instance, client sign contract with every contractors,
+provides the DJ with a list of desired songs. The presenter asks the DJ for a list of songs 
+in order to use them in the performance and so on.
+
+By having this logic implemented directly inside the code of the objects you make these classes much harder to reuse.  
+Moreover, if the methods in any of the classes change, you will have to change the logic throughout the code.
+
+- Refactor code in `event_organization.py` to make classes independent from each other
